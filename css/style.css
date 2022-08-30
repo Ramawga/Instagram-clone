@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: rgb(250, 250, 250);
+}
+
+header{
+ 
+    background: #fff;
+}
+
+.clear{
+    clear: both;
+}
+
+.center{
+    max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header > .center{
+    display: flex;
+
+}
+
+
+
+.logo-header{
+    width: 30%;
+}
+
+.logo-header img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.search{
+    text-align: center;
+    width: 40%;
+    padding-top: 12px;
+}
+
+.search-box{
+    display: inline-block;
+    position: relative;
+}
+
+.search-box input{
+    background-color: rgb(245,245,245);
+    padding: 10px 0px;
+    padding-left: 40px;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    width: 300px;
+}
+
+.search-box i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+   opacity: 0.3;;
+}
+.notif{
+    width: 30%;
+    text-align: right;
+    padding-top: 12px;
+}
+
+.notif a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    margin-right: 16px;
+    display: inline-block;
+}
+
+.notif .img-perfil{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+/*perfil descrição*/
+
+.img-perfil-wraper{
+        float: left;
+        width: 32%;
+        padding: 0 50px;
+}
+
+.img-perfil-primario{
+    background-size: 100% 100%;
+    width: 80%;
+    padding-top: 80%;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 13px;
+}
+
+.texto-perfil{
+    float: left;
+    width: 68%;
+}
+
+.nome-perfil span{
+    font-size: 29px;
+    font-weight: lighter;
+    position: relative;
+    top: 4px;
+}
+
+.nome-perfil a.btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #dbdbdb;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+.nome-perfil a.gear{
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
+    position: relative;
+    top: 2px;
+}
+
+.info-perfil p{
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.status p:nth-of-type(1){
+    margin-top: 20px;
+}
+
+
+/*feed*/
+
+
+section.feed{
+    padding: 80px 0;
+    padding-bottom: 0;
+}
+
+.line-feed{
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.line-marcacao{
+    display: none;
+    position: absolute;
+    height: 1px;
+    background-color: black;
+    width: 110px;
+    top: -20px;
+}
+
+.single-line{
+    position: relative;
+    display: inline-block;
+    margin: 20px 30px;
+    font-size: 14px;
+    color: rgb(109, 109, 109);
+    cursor: pointer;
+    letter-spacing: 1px;
+
+}
+
+/*publi*/
+
+section#publi > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-publi{
+    display: inline-block;
+    width: 33.3%;
+    border: 10px solid rgb(250, 250, 250);
+}
+
+.publi-single{
+    background-size: 100% 100%;
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+ 
+}
+
+
+/*salvos*/
+
+section#salvos > .center{
+    display: flex;
+}
+
+.galeria1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.3%;
+    border: 10px solid rgb(250, 250, 250);
+}
+
+.box-publi1{
+    display: inline-block;
+    width: 50%;
+    border: 1px solid rgb(250, 250, 250);
+
+}
+
+.galeria1 p{
+    position: relative;
+    top: -40px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    left: 25px;
+}
+
+/*marcacoes*/
+
+.text-marc{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.text-marc h2{
+    font-weight: lighter;
+    font-size: 27px;
+}
+
+.text-marc p{
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+/*estilos para as abas*/
+#salvos,#marcacoes{
+    display: none;
+}
+
+
+
+/*responsive*/
+
+@media  screen and (max-width:890px){
+
+    .img-perfil-wraper{
+        float: left;
+        width: 32%;
+        padding: 0;
+}
+
+
+    .img-perfil-primario{
+
+        width: 100%;
+        padding-top: 100%;
+        top: 13px;
+    }
+
+    section.perfil-descricao{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width:670px){
+    .search-box{
+        display: none;
+    }
+
+    .notif{
+        padding-top: 8px;
+        width: 70%;
+        
+    }
+}
+    
+
+
